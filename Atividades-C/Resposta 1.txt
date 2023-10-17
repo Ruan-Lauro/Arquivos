@@ -1,0 +1,73 @@
+Atividade 1
+----------------------------------------------------------------------------------------------
+1)
+
+A forma certa é: 
+
+#include <stdio.h>
+
+int main(){
+printf("Existem %d semanas no ano.", 56);
+return 0;
+}
+----------------------------------------------------------------------------------------------
+2)
+
+Falta o #include <stdio.h>, 'int' no main, o 'M' do main ser escrito minúsculo, falta colocar um valor para 'd', colocar um ';' no final e um 'return 0;'
+----------------------------------------------------------------------------------------------
+3)
+
+um
+dois
+tr├¬s
+----------------------------------------------------------------------------------------------
+4)
+
+É uma possição de memória que pode ser identificada através de um nome.
+----------------------------------------------------------------------------------------------
+5)
+
+int, char, float e double.
+----------------------------------------------------------------------------------------------
+6)
+
+d, e, g, i, j.
+----------------------------------------------------------------------------------------------
+7)
+a e b
+----------------------------------------------------------------------------------------------
+8)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main(void){
+setlocale(LC_ALL,"Portugueses");
+printf("Esta é a linha um.\nEsta é a linha dois.");
+return 0;
+}
+----------------------------------------------------------------------------------------------9)
+#include <stdio.h>
+int main(){
+printf("  um\n\n      dois\n\n            tres");
+
+return 0;
+}
+----------------------------------------------------------------------------------------------
+10)
+#include <stdio.h>
+int main(){
+
+int pri = 1, seg = 2, ter = 3;
+char p = 'a';
+char q = 'b';
+char r = 'c';
+
+printf("As variáveis interias comtêm os números %d, %d e %d.\n",pri,seg,ter);
+printf("As variáveis caracteres contêm os valores %c, %c e %c.",p,q,r);
+
+return 0;
+}
+

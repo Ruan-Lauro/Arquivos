@@ -1,0 +1,44 @@
+Git:
+
+Comando para criar pastas:
+mkdir (nome)
+
+Comando para entrar na pasta:
+cd (nome da pasta)
+
+Comando para transformar a pasta em um repositório:
+git init
+
+Comando para criar um arquivo:
+touch (nome.linguagem)
+
+Comando para entrar na pasta:
+ls
+
+Comando para ver se está comitado:
+⁭git status
+
+Comando para comitar o arquivo no repositório:
+git add (nome.linguagem)
+
+Comando para adicionar um comentário:
+git commit -m "..."
+
+Comando para ver o commit:
+git log
+
+Comando para adicionar um remote:
+git remote add origin
+
+Comando para levar o que está no repositório para o github:
+git push
+
+Comando para levar o que está no github ao repositório:
+git pull (link do github)
+
+
+
+
+
+
+

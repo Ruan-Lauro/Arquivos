@@ -1,0 +1,316 @@
+4) 
+#include <stdio.h>
+
+int main(){
+
+    int b = 0;
+    int a;
+    int c = 1;
+    printf("Escreva um valor inteiro: ");
+    scanf("%d",&a);
+    while (a > b){
+        printf("%d ",a);
+        c *= a;
+        a -= 1;
+    };
+    printf("= %d",c);
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------
+5)
+#include <stdio.h>
+
+int main(){
+int a, b = 0, c = 1, d = 0;
+printf("Escreva até que quantidade você quer? ");
+scanf("%d", &a);
+while (a > b){
+    if (d == 0){
+        printf("0 ");
+    }else{
+        printf("%d ",d);
+    }
+    d = d + c;
+    c = d - c;
+    a -= 1;
+
+}
+return 0;
+}
+-------------------------------------------------------------------------------------------------
+6)
+#include <stdio.h>
+
+int main(){
+int a, b = 0, c = 1, d = 0, e =0, f =0;
+printf("Escreva até que termo, você quer: ");
+scanf("%d",&a);
+while (b < a){
+    b += 1;
+    if (c != 1){
+        c += 1;
+    }
+    d = b/c;
+    e = d + e;
+    c += 1;
+}
+printf("%d é o valor", e);
+return 0;
+}
+
+----------------------------------------------------------------------------------------------
+7)
+#include <stdio.h>
+
+int main() {
+    int a, b, c = 0,d = 1;
+    printf("Escreva dois números ");
+    scanf("%d %d",&a,&b);
+    while(b > c) {
+        d *= a;
+        printf("%d\n",d);
+        b -= 1;
+    }
+    printf("%d",d)
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+8)
+#include <stdio.h>
+
+int main() {
+    int a,b,c = 0, d = 0;
+    printf("Escreva um numero e veremos se ele é um numero perfeito ");
+    scanf("%d",&a);
+    b = a;
+    if(a == 0){
+        printf("Não é um número perfeito!");
+    }else{
+         while(a > c){
+             a -= 1;
+             if(b%a == 0){
+                 d += a;}
+             if(a==1){
+                 break;
+             }}
+        if (d == b){
+            printf("É um número perfeito");
+        }else{
+            printf("Não é um número perfeito");
+        }
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------------
+9)
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d,e,f,g,h,i,j;
+    printf("Escreva um número de até 4 digitos ");
+    scanf("%d",&a);
+    if(a > 1000 && a < 10000){
+        b = a/1000; /* É o primeiro*/
+        c = b*10;
+        d = a/100;
+        e = (d - c)*10; /* É o segundo*/
+        f = a/10;
+        g = d*10;
+        h = (f - g)*100; /* É o terceiro*/
+        i = (a - (f*10))*1000;/* É o quarto valor*/
+        j = i + h + e + b;
+        printf("%d",j);
+
+    }else if (a < 1000 && a > 100){
+        b = a/100;/* primeiro*/
+        c = b*10;
+        d = a/10;
+        e = (d - c)*10; /* segundo*/
+        f = (a - (d*10))*100; /* terceiro valor*/
+        g = f + e + b;
+        printf("%d",g);
+
+    }else if (a < 100 && a > 10){
+        b = a/10;/*Primeiro*/
+        c = b*10;
+        d = (a - c)*10;/*Segundo*/
+        e = d + b;
+        printf("%d",e);
+
+    }else if (a < 10){
+        printf("%d",a);
+    }else{
+        printf("Você colocou um número de mais digitos!!");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10)
+#include <stdio.h>
+int main(){
+
+char a, b;
+int c;
+printf("Escreva duas letras ");
+scanf("%c, %c",&a,&b);
+
+if(a > b){
+    c = a - (b+1);
+}else{
+    c = b - (a+1);
+}
+
+printf("Existe(m) %d letra(s) entre elas.",c);
+
+return 0;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11)
+#include <stdio.h>
+int main(){
+
+    int a;
+    int b = 0;
+    int c;
+    int d = 0;
+
+    printf("Escreva um número e veja se ele é primo ");
+    scanf("%d",&a);
+    c = a;
+
+    while(a > d){
+        if(c%a==0){
+            b+=1;
+        }
+        a-=1;
+    }
+
+    if(b == 2){
+        printf("É um número primo");
+    }else{
+        printf("Não é um número primo");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------------------
+12)
+#include <stdio.h>
+int main(){
+
+    int a, c;
+    int d = 0;
+    int g = 1;
+
+    printf("Escreva um número inteiro positivo ");
+    scanf("%d",&a);
+
+    while(a > 0){
+        c = a;
+        while (c > 0){
+            if(a%c == 0){
+                d+=1;
+            }
+            c -= 1;
+        }
+
+        if(d <= 2){
+            g*=a;
+            printf("%d\n",a);
+        }else{
+            g*=1;
+        }
+        d = 0;
+        a -= 1;
+    }
+    printf("%d",g);
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13)
+#include <stdio.h>
+int main(){
+int a, b;
+int c = 2;
+int d = 0, e = 0;
+int f = 1;
+
+printf("Escreva dois numeros inteiros ");
+scanf("%d %d", &a, &b);
+
+ while(a>1 && b>1){
+
+        if(a%c==0){
+            d = c;
+            a = a/c;
+            }else if(a == 2|| a ==3){
+                d = a;
+                a = a/a;
+            }
+            
+        if(b%c==0){
+            e = c;
+            b = b/c;
+            }else if(b == 2|| b ==3){
+                e = b;
+                b = b/b;
+            }
+
+        if(e == d){
+            f *= d;
+        }
+        c += 1;
+    }
+    printf("%d",f);
+
+return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------15)
+#include <stdio.h>
+
+int main() {
+  int a, b, d, e = 1, f = 0, g = 0, h = 0, i, k;
+  int c = 1;
+  printf("Escreva um número inteiro: ");
+  scanf("%d",&a);
+  b = a;
+  k = a;
+  for(int i = 0; i < b; i++){
+    a = a/10;
+    c *= 10;
+    if (a <= 9){
+      break;
+    }
+  }
+  d = b;
+  b = c;
+  for(int j = 0; j < d; j++){
+    i = h;
+    //printf("\n%d",i);
+    h = d/c;
+    //printf("\n%d",d);
+    g = h - (i*10);
+    //printf("\n%d",g);
+    f = f + (g*e);
+    //printf("\n%d",f);
+    e *= 10;
+    //printf("\n%d",e);
+    c = c/10;
+    //printf("\n%d",c);
+    if(e > b){
+      break;
+    }
+  }
+  //printf("\n%d",f);
+  if (f == k){
+    printf("\nÉ palindromo");
+  }else{
+    printf("\nNão é palindromo");
+  }
+  }
+
